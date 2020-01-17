@@ -196,25 +196,25 @@
   color: #f92672;
 }
     </style>
-    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
-    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
-      <script src="javascripts/all.js"></script>
+    <link href="stylesheets/screen-a1ce949a.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print-bccf8c07.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all-c5541673.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;]">
+  <body class="index" data-languages="[&quot;shell&quot;,&quot;python&quot;,&quot;javascript&quot;,&quot;php&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
-        <img src="images/navbar.png" alt="Navbar" />
+        <img src="images/navbar-cad8cdcb.png" alt="Navbar" />
       </span>
     </a>
     <div class="toc-wrapper">
-      <img src="images/logo.png" class="logo" alt="Logo" />
+      <img src="images/logo-1e815a84.png" class="logo" alt="Logo" />
         <div class="lang-selector">
               <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="ruby">ruby</a>
               <a href="#" data-language-name="python">python</a>
               <a href="#" data-language-name="javascript">javascript</a>
+              <a href="#" data-language-name="php">php</a>
         </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -228,16 +228,844 @@
             <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
           </li>
           <li>
-            <a href="#kittens" class="toc-h1 toc-link" data-title="Kittens">Kittens</a>
+            <a href="#atom-3-rest-apis" class="toc-h1 toc-link" data-title="AtoM 3 REST APIs">AtoM 3 REST APIs</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#get-all-kittens" class="toc-h2 toc-link" data-title="Get All Kittens">Get All Kittens</a>
+                    <a href="#create-a-corporate-entity-agent" class="toc-h2 toc-link" data-title="Create a corporate entity agent">Create a corporate entity agent</a>
                   </li>
                   <li>
                     <a href="#get-a-specific-kitten" class="toc-h2 toc-link" data-title="Get a Specific Kitten">Get a Specific Kitten</a>
                   </li>
                   <li>
                     <a href="#delete-a-specific-kitten" class="toc-h2 toc-link" data-title="Delete a Specific Kitten">Delete a Specific Kitten</a>
+                  </li>
+                  <li>
+                    <a href="#batch-create-several-archival-objects-as-children-of-an-existing-archival-object" class="toc-h2 toc-link" data-title="Batch create several Archival Objects as children of an existing Archival Object">Batch create several Archival Objects as children of an existing Archival Object</a>
+                  </li>
+                  <li>
+                    <a href="#batch-create-several-archival-objects-as-children-of-an-existing-resource" class="toc-h2 toc-link" data-title="Batch create several Archival Objects as children of an existing Resource">Batch create several Archival Objects as children of an existing Resource</a>
+                  </li>
+                  <li>
+                    <a href="#batch-create-several-digital-object-components-as-children-of-an-existing-digital-object" class="toc-h2 toc-link" data-title="Batch create several Digital Object Components as children of an existing Digital Object">Batch create several Digital Object Components as children of an existing Digital Object</a>
+                  </li>
+                  <li>
+                    <a href="#batch-create-several-digital-object-components-as-children-of-an-existing-digital-object-component" class="toc-h2 toc-link" data-title="Batch create several Digital Object Components as children of an existing Digital Object Component">Batch create several Digital Object Components as children of an existing Digital Object Component</a>
+                  </li>
+                  <li>
+                    <a href="#become-a-different-user" class="toc-h2 toc-link" data-title="Become a different user">Become a different user</a>
+                  </li>
+                  <li>
+                    <a href="#bulk-update-barcodes" class="toc-h2 toc-link" data-title="Bulk update barcodes">Bulk update barcodes</a>
+                  </li>
+                  <li>
+                    <a href="#bulk-update-locations" class="toc-h2 toc-link" data-title="Bulk update locations">Bulk update locations</a>
+                  </li>
+                  <li>
+                    <a href="#calculate-how-many-containers-will-fit-in-a-list-of-locations" class="toc-h2 toc-link" data-title="Calculate how many containers will fit in a list of locations">Calculate how many containers will fit in a list of locations</a>
+                  </li>
+                  <li>
+                    <a href="#calculate-how-many-containers-will-fit-in-locations-for-a-given-building" class="toc-h2 toc-link" data-title="Calculate how many containers will fit in locations for a given building">Calculate how many containers will fit in locations for a given building</a>
+                  </li>
+                  <li>
+                    <a href="#calculate-the-dates-of-an-archival-object-tree" class="toc-h2 toc-link" data-title="Calculate the dates of an archival object tree">Calculate the dates of an archival object tree</a>
+                  </li>
+                  <li>
+                    <a href="#calculate-the-extent-of-an-archival-object-tree" class="toc-h2 toc-link" data-title="Calculate the extent of an archival object tree">Calculate the extent of an archival object tree</a>
+                  </li>
+                  <li>
+                    <a href="#cancel-a-job" class="toc-h2 toc-link" data-title="Cancel a Job">Cancel a Job</a>
+                  </li>
+                  <li>
+                    <a href="#carry-out-a-detailed-merge-request-against-agent-records" class="toc-h2 toc-link" data-title="Carry out a detailed merge request against Agent records">Carry out a detailed merge request against Agent records</a>
+                  </li>
+                  <li>
+                    <a href="#carry-out-a-merge-request-against-agent-records" class="toc-h2 toc-link" data-title="Carry out a merge request against Agent records">Carry out a merge request against Agent records</a>
+                  </li>
+                  <li>
+                    <a href="#carry-out-a-merge-request-against-digital_object-records" class="toc-h2 toc-link" data-title="Carry out a merge request against Digital_Object records">Carry out a merge request against Digital_Object records</a>
+                  </li>
+                  <li>
+                    <a href="#carry-out-a-merge-request-against-resource-records" class="toc-h2 toc-link" data-title="Carry out a merge request against Resource records">Carry out a merge request against Resource records</a>
+                  </li>
+                  <li>
+                    <a href="#carry-out-a-merge-request-against-subject-records" class="toc-h2 toc-link" data-title="Carry out a merge request against Subject records">Carry out a merge request against Subject records</a>
+                  </li>
+                  <li>
+                    <a href="#carry-out-delete-requests-against-a-list-of-records" class="toc-h2 toc-link" data-title="Carry out delete requests against a list of records">Carry out delete requests against a list of records</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-batch-of-locations" class="toc-h2 toc-link" data-title="Create a Batch of Locations">Create a Batch of Locations</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-classification" class="toc-h2 toc-link" data-title="Create a Classification">Create a Classification</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-classification-term" class="toc-h2 toc-link" data-title="Create a Classification Term">Create a Classification Term</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-container_profile" class="toc-h2 toc-link" data-title="Create a Container_Profile">Create a Container_Profile</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-digital-object" class="toc-h2 toc-link" data-title="Create a Digital Object">Create a Digital Object</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-family-agent" class="toc-h2 toc-link" data-title="Create a family agent">Create a family agent</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-group-within-a-repository" class="toc-h2 toc-link" data-title="Create a group within a repository">Create a group within a repository</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-local-user" class="toc-h2 toc-link" data-title="Create a local user">Create a local user</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-location" class="toc-h2 toc-link" data-title="Create a Location">Create a Location</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-location_profile" class="toc-h2 toc-link" data-title="Create a Location_Profile">Create a Location_Profile</a>
+                  </li>
+                  <li>
+                    <a href="#create-an-accession" class="toc-h2 toc-link" data-title="Create an Accession">Create an Accession</a>
+                  </li>
+                  <li>
+                    <a href="#create-an-archival-object" class="toc-h2 toc-link" data-title="Create an Archival Object">Create an Archival Object</a>
+                  </li>
+                  <li>
+                    <a href="#create-an-assessment" class="toc-h2 toc-link" data-title="Create an Assessment">Create an Assessment</a>
+                  </li>
+                  <li>
+                    <a href="#create-an-digital-object-component" class="toc-h2 toc-link" data-title="Create an Digital Object Component">Create an Digital Object Component</a>
+                  </li>
+                  <li>
+                    <a href="#create-an-enumeration" class="toc-h2 toc-link" data-title="Create an enumeration">Create an enumeration</a>
+                  </li>
+                  <li>
+                    <a href="#create-an-event" class="toc-h2 toc-link" data-title="Create an Event">Create an Event</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-new-job" class="toc-h2 toc-link" data-title="Create a new job">Create a new job</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-new-job-and-post-input-files" class="toc-h2 toc-link" data-title="Create a new job and post input files">Create a new job and post input files</a>
+                  </li>
+                  <li>
+                    <a href="#create-an-rde-template" class="toc-h2 toc-link" data-title="Create an RDE template">Create an RDE template</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-person-agent" class="toc-h2 toc-link" data-title="Create a person agent">Create a person agent</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-preferences-record" class="toc-h2 toc-link" data-title="Create a Preferences record">Create a Preferences record</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-repository" class="toc-h2 toc-link" data-title="Create a Repository">Create a Repository</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-repository-with-an-agent-representation" class="toc-h2 toc-link" data-title="Create a Repository with an agent representation">Create a Repository with an agent representation</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-resource" class="toc-h2 toc-link" data-title="Create a Resource">Create a Resource</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-software-agent" class="toc-h2 toc-link" data-title="Create a software agent">Create a software agent</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-subject" class="toc-h2 toc-link" data-title="Create a Subject">Create a Subject</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-top-container" class="toc-h2 toc-link" data-title="Create a top container">Create a top container</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-vocabulary" class="toc-h2 toc-link" data-title="Create a Vocabulary">Create a Vocabulary</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-classification" class="toc-h2 toc-link" data-title="Delete a Classification">Delete a Classification</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-classification-term" class="toc-h2 toc-link" data-title="Delete a Classification Term">Delete a Classification Term</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-corporate-entity-agent" class="toc-h2 toc-link" data-title="Delete a corporate entity agent">Delete a corporate entity agent</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-digital-object" class="toc-h2 toc-link" data-title="Delete a Digital Object">Delete a Digital Object</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-digital-object-component" class="toc-h2 toc-link" data-title="Delete a Digital Object Component">Delete a Digital Object Component</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-group-by-id" class="toc-h2 toc-link" data-title="Delete a group by ID">Delete a group by ID</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-job" class="toc-h2 toc-link" data-title="Delete a Job">Delete a Job</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-location" class="toc-h2 toc-link" data-title="Delete a Location">Delete a Location</a>
+                  </li>
+                  <li>
+                    <a href="#delete-an-accession" class="toc-h2 toc-link" data-title="Delete an Accession">Delete an Accession</a>
+                  </li>
+                  <li>
+                    <a href="#delete-an-agent-family" class="toc-h2 toc-link" data-title="Delete an agent family">Delete an agent family</a>
+                  </li>
+                  <li>
+                    <a href="#delete-an-agent-person" class="toc-h2 toc-link" data-title="Delete an agent person">Delete an agent person</a>
+                  </li>
+                  <li>
+                    <a href="#delete-an-archival-object" class="toc-h2 toc-link" data-title="Delete an Archival Object">Delete an Archival Object</a>
+                  </li>
+                  <li>
+                    <a href="#delete-an-assessment" class="toc-h2 toc-link" data-title="Delete an Assessment">Delete an Assessment</a>
+                  </li>
+                  <li>
+                    <a href="#delete-an-container-profile" class="toc-h2 toc-link" data-title="Delete an Container Profile">Delete an Container Profile</a>
+                  </li>
+                  <li>
+                    <a href="#delete-an-event-record" class="toc-h2 toc-link" data-title="Delete an event record">Delete an event record</a>
+                  </li>
+                  <li>
+                    <a href="#delete-an-location-profile" class="toc-h2 toc-link" data-title="Delete an Location Profile">Delete an Location Profile</a>
+                  </li>
+                  <li>
+                    <a href="#delete-an-rde-template" class="toc-h2 toc-link" data-title="Delete an RDE Template">Delete an RDE Template</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-preferences-record" class="toc-h2 toc-link" data-title="Delete a Preferences record">Delete a Preferences record</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-repository" class="toc-h2 toc-link" data-title="Delete a Repository">Delete a Repository</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-resource" class="toc-h2 toc-link" data-title="Delete a Resource">Delete a Resource</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-software-agent" class="toc-h2 toc-link" data-title="Delete a software agent">Delete a software agent</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-subject" class="toc-h2 toc-link" data-title="Delete a Subject">Delete a Subject</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-top-container" class="toc-h2 toc-link" data-title="Delete a top container">Delete a top container</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-user" class="toc-h2 toc-link" data-title="Delete a user">Delete a user</a>
+                  </li>
+                  <li>
+                    <a href="#fetch-the-record-slice-for-a-given-tree-waypoint" class="toc-h2 toc-link" data-title="Fetch the record slice for a given tree waypoint">Fetch the record slice for a given tree waypoint</a>
+                  </li>
+                  <li>
+                    <a href="#fetch-the-record-slice-for-a-given-tree-waypoint-2" class="toc-h2 toc-link" data-title="Fetch the record slice for a given tree waypoint">Fetch the record slice for a given tree waypoint</a>
+                  </li>
+                  <li>
+                    <a href="#fetch-the-record-slice-for-a-given-tree-waypoint-3" class="toc-h2 toc-link" data-title="Fetch the record slice for a given tree waypoint">Fetch the record slice for a given tree waypoint</a>
+                  </li>
+                  <li>
+                    <a href="#fetch-tree-information-for-an-archival-object-record-within-a-tree" class="toc-h2 toc-link" data-title="Fetch tree information for an Archival Object record within a tree">Fetch tree information for an Archival Object record within a tree</a>
+                  </li>
+                  <li>
+                    <a href="#fetch-tree-information-for-an-classification-term-record-within-a-tree" class="toc-h2 toc-link" data-title="Fetch tree information for an Classification Term record within a tree">Fetch tree information for an Classification Term record within a tree</a>
+                  </li>
+                  <li>
+                    <a href="#fetch-tree-information-for-an-digital-object-component-record-within-a-tree" class="toc-h2 toc-link" data-title="Fetch tree information for an Digital Object Component record within a tree">Fetch tree information for an Digital Object Component record within a tree</a>
+                  </li>
+                  <li>
+                    <a href="#fetch-tree-information-for-the-top-level-classification-record" class="toc-h2 toc-link" data-title="Fetch tree information for the top-level classification record">Fetch tree information for the top-level classification record</a>
+                  </li>
+                  <li>
+                    <a href="#fetch-tree-information-for-the-top-level-digital-object-record" class="toc-h2 toc-link" data-title="Fetch tree information for the top-level digital object record">Fetch tree information for the top-level digital object record</a>
+                  </li>
+                  <li>
+                    <a href="#fetch-tree-information-for-the-top-level-resource-record" class="toc-h2 toc-link" data-title="Fetch tree information for the top-level resource record">Fetch tree information for the top-level resource record</a>
+                  </li>
+                  <li>
+                    <a href="#fetch-tree-path-from-the-root-record-to-classification-terms" class="toc-h2 toc-link" data-title="Fetch tree path from the root record to Classification Terms">Fetch tree path from the root record to Classification Terms</a>
+                  </li>
+                  <li>
+                    <a href="#fetch-tree-paths-from-the-root-record-to-archival-objects" class="toc-h2 toc-link" data-title="Fetch tree paths from the root record to Archival Objects">Fetch tree paths from the root record to Archival Objects</a>
+                  </li>
+                  <li>
+                    <a href="#fetch-tree-paths-from-the-root-record-to-digital-object-components" class="toc-h2 toc-link" data-title="Fetch tree paths from the root record to Digital Object Components">Fetch tree paths from the root record to Digital Object Components</a>
+                  </li>
+                  <li>
+                    <a href="#find-archival-objects-by-ref_id-or-component_id" class="toc-h2 toc-link" data-title="Find Archival Objects by ref_id or component_id">Find Archival Objects by ref_id or component_id</a>
+                  </li>
+                  <li>
+                    <a href="#find-digital-object-components-by-component_id" class="toc-h2 toc-link" data-title="Find Digital Object Components by component_id">Find Digital Object Components by component_id</a>
+                  </li>
+                  <li>
+                    <a href="#find-digital-objects-by-digital_object_id" class="toc-h2 toc-link" data-title="Find Digital Objects by digital_object_id">Find Digital Objects by digital_object_id</a>
+                  </li>
+                  <li>
+                    <a href="#find-resources-by-their-identifiers" class="toc-h2 toc-link" data-title="Find Resources by their identifiers">Find Resources by their identifiers</a>
+                  </li>
+                  <li>
+                    <a href="#find-the-record-given-the-slug-return-id-repo_id-and-table-name" class="toc-h2 toc-link" data-title="Find the record given the slug, return id, repo_id, and table name">Find the record given the slug, return id, repo_id, and table name</a>
+                  </li>
+                  <li>
+                    <a href="#find-the-tree-view-for-a-particular-archival-record" class="toc-h2 toc-link" data-title="Find the tree view for a particular archival record">Find the tree view for a particular archival record</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-classification" class="toc-h2 toc-link" data-title="Get a Classification">Get a Classification</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-classification-term-by-id" class="toc-h2 toc-link" data-title="Get a Classification Term by ID">Get a Classification Term by ID</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-classification-tree" class="toc-h2 toc-link" data-title="Get a Classification tree">Get a Classification tree</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-collection-management-record-by-id" class="toc-h2 toc-link" data-title="Get a Collection Management Record by ID">Get a Collection Management Record by ID</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-container-profile-by-id" class="toc-h2 toc-link" data-title="Get a Container Profile by ID">Get a Container Profile by ID</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-corporate-entity-by-id" class="toc-h2 toc-link" data-title="Get a corporate entity by ID">Get a corporate entity by ID</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-digital-object" class="toc-h2 toc-link" data-title="Get a Digital Object">Get a Digital Object</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-digital-object-tree" class="toc-h2 toc-link" data-title="Get a Digital Object tree">Get a Digital Object tree</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-dublin-core-representation-of-a-digital-object" class="toc-h2 toc-link" data-title="Get a Dublin Core representation of a Digital Object">Get a Dublin Core representation of a Digital Object</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-family-by-id" class="toc-h2 toc-link" data-title="Get a family by ID">Get a family by ID</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-group-by-id" class="toc-h2 toc-link" data-title="Get a group by ID">Get a group by ID</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-job-by-id" class="toc-h2 toc-link" data-title="Get a Job by ID">Get a Job by ID</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-job-rsquo-s-list-of-created-uris" class="toc-h2 toc-link" data-title="Get a Job’s list of created URIs">Get a Job’s list of created URIs</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-job-rsquo-s-log-by-id" class="toc-h2 toc-link" data-title="Get a Job’s log by ID">Get a Job’s log by ID</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-job-rsquo-s-output-file-by-id" class="toc-h2 toc-link" data-title="Get a Job’s output file by ID">Get a Job’s output file by ID</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-accessions-for-a-repository" class="toc-h2 toc-link" data-title="Get a list of Accessions for a Repository">Get a list of Accessions for a Repository</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-all-active-jobs-for-a-repository" class="toc-h2 toc-link" data-title="Get a list of all active Jobs for a Repository">Get a list of all active Jobs for a Repository</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-all-archived-jobs-for-a-repository" class="toc-h2 toc-link" data-title="Get a list of all archived Jobs for a Repository">Get a list of all archived Jobs for a Repository</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-archival-objects-for-a-repository" class="toc-h2 toc-link" data-title="Get a list of Archival Objects for a Repository">Get a list of Archival Objects for a Repository</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-assessments-for-a-repository" class="toc-h2 toc-link" data-title="Get a list of Assessments for a Repository">Get a list of Assessments for a Repository</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-classifications-for-a-repository" class="toc-h2 toc-link" data-title="Get a list of Classifications for a Repository">Get a list of Classifications for a Repository</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-classification-terms-for-a-repository" class="toc-h2 toc-link" data-title="Get a list of Classification Terms for a Repository">Get a list of Classification Terms for a Repository</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-container-profiles" class="toc-h2 toc-link" data-title="Get a list of Container Profiles">Get a list of Container Profiles</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-digital-object-components-for-a-repository" class="toc-h2 toc-link" data-title="Get a list of Digital Object Components for a Repository">Get a list of Digital Object Components for a Repository</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-digital-objects-for-a-repository" class="toc-h2 toc-link" data-title="Get a list of Digital Objects for a Repository">Get a list of Digital Objects for a Repository</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-events-for-a-repository" class="toc-h2 toc-link" data-title="Get a list of Events for a Repository">Get a list of Events for a Repository</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-groups-for-a-repository" class="toc-h2 toc-link" data-title="Get a list of groups for a repository">Get a list of groups for a repository</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-job-rsquo-s-output-files-by-id" class="toc-h2 toc-link" data-title="Get a list of Job’s output files by ID">Get a list of Job’s output files by ID</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-jobs-for-a-repository" class="toc-h2 toc-link" data-title="Get a list of Jobs for a Repository">Get a list of Jobs for a Repository</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-location-profiles" class="toc-h2 toc-link" data-title="Get a list of Location Profiles">Get a list of Location Profiles</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-locations" class="toc-h2 toc-link" data-title="Get a list of locations">Get a list of locations</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-permissions" class="toc-h2 toc-link" data-title="Get a list of Permissions">Get a list of Permissions</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-preferences-for-a-repository-and-optionally-a-user" class="toc-h2 toc-link" data-title="Get a list of Preferences for a Repository and optionally a user">Get a list of Preferences for a Repository and optionally a user</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-rde-templates" class="toc-h2 toc-link" data-title="Get a list of RDE Templates">Get a list of RDE Templates</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-record-types-in-the-graph-of-a-resource" class="toc-h2 toc-link" data-title="Get a list of record types in the graph of a resource">Get a list of record types in the graph of a resource</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-repositories" class="toc-h2 toc-link" data-title="Get a list of Repositories">Get a list of Repositories</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-resources-for-a-repository" class="toc-h2 toc-link" data-title="Get a list of Resources for a Repository">Get a list of Resources for a Repository</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-subjects" class="toc-h2 toc-link" data-title="Get a list of Subjects">Get a list of Subjects</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-system-users" class="toc-h2 toc-link" data-title="Get a list of system users">Get a list of system users</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-terms-for-a-vocabulary" class="toc-h2 toc-link" data-title="Get a list of Terms for a Vocabulary">Get a list of Terms for a Vocabulary</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-terms-matching-a-prefix" class="toc-h2 toc-link" data-title="Get a list of Terms matching a prefix">Get a list of Terms matching a prefix</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-topcontainers-for-a-repository" class="toc-h2 toc-link" data-title="Get a list of TopContainers for a Repository">Get a list of TopContainers for a Repository</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-users" class="toc-h2 toc-link" data-title="Get a list of users">Get a list of users</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-list-of-vocabularies" class="toc-h2 toc-link" data-title="Get a list of Vocabularies">Get a list of Vocabularies</a>
+                  </li>
+                  <li>
+                    <a href="#get-all-archivesspace-schemas" class="toc-h2 toc-link" data-title="Get all ArchivesSpace schemas">Get all ArchivesSpace schemas</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-location-by-id" class="toc-h2 toc-link" data-title="Get a Location by ID">Get a Location by ID</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-location-by-id-2" class="toc-h2 toc-link" data-title="Get a Location by ID">Get a Location by ID</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-location-profile-by-id" class="toc-h2 toc-link" data-title="Get a Location Profile by ID">Get a Location Profile by ID</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-marc-21-representation-of-a-resource" class="toc-h2 toc-link" data-title="Get a MARC 21 representation of a Resource">Get a MARC 21 representation of a Resource</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-mets-representation-of-a-digital-object" class="toc-h2 toc-link" data-title="Get a METS representation of a Digital Object">Get a METS representation of a Digital Object</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-mods-representation-of-a-digital-object" class="toc-h2 toc-link" data-title="Get a MODS representation of a Digital Object">Get a MODS representation of a Digital Object</a>
+                  </li>
+                  <li>
+                    <a href="#get-an-accession-by-id" class="toc-h2 toc-link" data-title="Get an Accession by ID">Get an Accession by ID</a>
+                  </li>
+                  <li>
+                    <a href="#get-an-archival-object-by-id" class="toc-h2 toc-link" data-title="Get an Archival Object by ID">Get an Archival Object by ID</a>
+                  </li>
+                  <li>
+                    <a href="#get-an-archivesspace-schema" class="toc-h2 toc-link" data-title="Get an ArchivesSpace schema">Get an ArchivesSpace schema</a>
+                  </li>
+                  <li>
+                    <a href="#get-an-assessment-by-id" class="toc-h2 toc-link" data-title="Get an Assessment by ID">Get an Assessment by ID</a>
+                  </li>
+                  <li>
+                    <a href="#get-an-digital-object-component-by-id" class="toc-h2 toc-link" data-title="Get an Digital Object Component by ID">Get an Digital Object Component by ID</a>
+                  </li>
+                  <li>
+                    <a href="#get-an-eac-cpf-representation-of-a-corporate-entity" class="toc-h2 toc-link" data-title="Get an EAC-CPF representation of a Corporate Entity">Get an EAC-CPF representation of a Corporate Entity</a>
+                  </li>
+                  <li>
+                    <a href="#get-an-eac-cpf-representation-of-a-family" class="toc-h2 toc-link" data-title="Get an EAC-CPF representation of a Family">Get an EAC-CPF representation of a Family</a>
+                  </li>
+                  <li>
+                    <a href="#get-an-eac-cpf-representation-of-an-agent" class="toc-h2 toc-link" data-title="Get an EAC-CPF representation of an Agent">Get an EAC-CPF representation of an Agent</a>
+                  </li>
+                  <li>
+                    <a href="#get-an-eac-cpf-representation-of-a-software-agent" class="toc-h2 toc-link" data-title="Get an EAC-CPF representation of a Software agent">Get an EAC-CPF representation of a Software agent</a>
+                  </li>
+                  <li>
+                    <a href="#get-an-ead-representation-of-a-resource" class="toc-h2 toc-link" data-title="Get an EAD representation of a Resource">Get an EAD representation of a Resource</a>
+                  </li>
+                  <li>
+                    <a href="#get-an-ead-representation-of-a-resource-2" class="toc-h2 toc-link" data-title="Get an EAD representation of a Resource">Get an EAD representation of a Resource</a>
+                  </li>
+                  <li>
+                    <a href="#get-an-enumeration" class="toc-h2 toc-link" data-title="Get an Enumeration">Get an Enumeration</a>
+                  </li>
+                  <li>
+                    <a href="#get-an-enumeration-by-name" class="toc-h2 toc-link" data-title="Get an Enumeration by Name">Get an Enumeration by Name</a>
+                  </li>
+                  <li>
+                    <a href="#get-an-enumeration-value" class="toc-h2 toc-link" data-title="Get an Enumeration Value">Get an Enumeration Value</a>
+                  </li>
+                  <li>
+                    <a href="#get-an-event-by-id" class="toc-h2 toc-link" data-title="Get an Event by ID">Get an Event by ID</a>
+                  </li>
+                  <li>
+                    <a href="#get-an-rde-template-record" class="toc-h2 toc-link" data-title="Get an RDE template record">Get an RDE template record</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-person-by-id" class="toc-h2 toc-link" data-title="Get a person by ID">Get a person by ID</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-preferences-record" class="toc-h2 toc-link" data-title="Get a Preferences record">Get a Preferences record</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-repository-by-id" class="toc-h2 toc-link" data-title="Get a Repository by ID">Get a Repository by ID</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-repository-by-id-including-its-agent-representation" class="toc-h2 toc-link" data-title="Get a Repository by ID, including its agent representation">Get a Repository by ID, including its agent representation</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-resource" class="toc-h2 toc-link" data-title="Get a Resource">Get a Resource</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-resource-tree" class="toc-h2 toc-link" data-title="Get a Resource tree">Get a Resource tree</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-software-agent-by-id" class="toc-h2 toc-link" data-title="Get a software agent by ID">Get a software agent by ID</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-static-asset-for-a-report" class="toc-h2 toc-link" data-title="Get a static asset for a report">Get a static asset for a report</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-stream-of-deleted-records" class="toc-h2 toc-link" data-title="Get a stream of deleted records">Get a stream of deleted records</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-stream-of-notifications" class="toc-h2 toc-link" data-title="Get a stream of notifications">Get a stream of notifications</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-stream-of-updated-records" class="toc-h2 toc-link" data-title="Get a stream of updated records">Get a stream of updated records</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-subject-by-id" class="toc-h2 toc-link" data-title="Get a Subject by ID">Get a Subject by ID</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-top-container-by-id" class="toc-h2 toc-link" data-title="Get a top container by ID">Get a top container by ID</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-tsv-list-of-printable-labels-for-a-resource" class="toc-h2 toc-link" data-title="Get a tsv list of printable labels for a Resource">Get a tsv list of printable labels for a Resource</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-user-rsquo-s-details-including-their-current-permissions" class="toc-h2 toc-link" data-title="Get a user’s details (including their current permissions)">Get a user’s details (including their current permissions)</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-user-rsquo-s-details-including-their-groups-for-the-current-repository" class="toc-h2 toc-link" data-title="Get a user’s details including their groups for the current repository">Get a user’s details including their groups for the current repository</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-vocabulary-by-id" class="toc-h2 toc-link" data-title="Get a Vocabulary by ID">Get a Vocabulary by ID</a>
+                  </li>
+                  <li>
+                    <a href="#get-default-values-for-a-record-type" class="toc-h2 toc-link" data-title="Get default values for a record type">Get default values for a record type</a>
+                  </li>
+                  <li>
+                    <a href="#get-export-metadata-for-a-resource-description" class="toc-h2 toc-link" data-title="Get export metadata for a Resource Description">Get export metadata for a Resource Description</a>
+                  </li>
+                  <li>
+                    <a href="#get-export-metadata-for-resource-labels" class="toc-h2 toc-link" data-title="Get export metadata for Resource labels">Get export metadata for Resource labels</a>
+                  </li>
+                  <li>
+                    <a href="#get-metadata-for-a-dublin-core-export" class="toc-h2 toc-link" data-title="Get metadata for a Dublin Core export">Get metadata for a Dublin Core export</a>
+                  </li>
+                  <li>
+                    <a href="#get-metadata-for-a-marc21-export" class="toc-h2 toc-link" data-title="Get metadata for a MARC21 export">Get metadata for a MARC21 export</a>
+                  </li>
+                  <li>
+                    <a href="#get-metadata-for-a-mets-export" class="toc-h2 toc-link" data-title="Get metadata for a METS export">Get metadata for a METS export</a>
+                  </li>
+                  <li>
+                    <a href="#get-metadata-for-a-mods-export" class="toc-h2 toc-link" data-title="Get metadata for a MODS export">Get metadata for a MODS export</a>
+                  </li>
+                  <li>
+                    <a href="#get-metadata-for-an-eac-cpf-export-of-a-corporate-entity" class="toc-h2 toc-link" data-title="Get metadata for an EAC-CPF export of a corporate entity">Get metadata for an EAC-CPF export of a corporate entity</a>
+                  </li>
+                  <li>
+                    <a href="#get-metadata-for-an-eac-cpf-export-of-a-family" class="toc-h2 toc-link" data-title="Get metadata for an EAC-CPF export of a family">Get metadata for an EAC-CPF export of a family</a>
+                  </li>
+                  <li>
+                    <a href="#get-metadata-for-an-eac-cpf-export-of-a-person" class="toc-h2 toc-link" data-title="Get metadata for an EAC-CPF export of a person">Get metadata for an EAC-CPF export of a person</a>
+                  </li>
+                  <li>
+                    <a href="#get-metadata-for-an-eac-cpf-export-of-a-software" class="toc-h2 toc-link" data-title="Get metadata for an EAC-CPF export of a software">Get metadata for an EAC-CPF export of a software</a>
+                  </li>
+                  <li>
+                    <a href="#get-required-fields-for-a-record-type" class="toc-h2 toc-link" data-title="Get required fields for a record type">Get required fields for a record type</a>
+                  </li>
+                  <li>
+                    <a href="#get-the-archivesspace-application-version" class="toc-h2 toc-link" data-title="Get the ArchivesSpace application version">Get the ArchivesSpace application version</a>
+                  </li>
+                  <li>
+                    <a href="#get-the-children-of-a-classification-term" class="toc-h2 toc-link" data-title="Get the children of a Classification Term">Get the children of a Classification Term</a>
+                  </li>
+                  <li>
+                    <a href="#get-the-children-of-an-archival-object" class="toc-h2 toc-link" data-title="Get the children of an Archival Object">Get the children of an Archival Object</a>
+                  </li>
+                  <li>
+                    <a href="#get-the-children-of-an-digital-object-component" class="toc-h2 toc-link" data-title="Get the children of an Digital Object Component">Get the children of an Digital Object Component</a>
+                  </li>
+                  <li>
+                    <a href="#get-the-currently-logged-in-user" class="toc-h2 toc-link" data-title="Get the currently logged in user">Get the currently logged in user</a>
+                  </li>
+                  <li>
+                    <a href="#get-the-default-set-of-preferences-for-a-repository-and-optionally-a-user" class="toc-h2 toc-link" data-title="Get the default set of Preferences for a Repository and optionally a user">Get the default set of Preferences for a Repository and optionally a user</a>
+                  </li>
+                  <li>
+                    <a href="#get-the-global-preferences-records-for-the-current-user" class="toc-h2 toc-link" data-title="Get the global Preferences records for the current user.">Get the global Preferences records for the current user.</a>
+                  </li>
+                  <li>
+                    <a href="#get-the-list-of-uris-of-this-published-resource-and-all-published-archival-objects-contained-within-ordered-by-tree-order-i-e-if-you-fully-expanded-the-record-tree-and-read-from-top-to-bottom" class="toc-h2 toc-link" data-title="Get the list of URIs of this published resource and all published archival objects contained within.Ordered by tree order (i.e. if you fully expanded the record tree and read from top to bottom)">Get the list of URIs of this published resource and all published archival objects contained within.Ordered by tree order (i.e. if you fully expanded the record tree and read from top to bottom)</a>
+                  </li>
+                  <li>
+                    <a href="#get-the-preferences-records-for-the-current-repository-and-user" class="toc-h2 toc-link" data-title="Get the Preferences records for the current repository and user.">Get the Preferences records for the current repository and user.</a>
+                  </li>
+                  <li>
+                    <a href="#get-the-previous-record-in-the-tree-for-an-archival-object" class="toc-h2 toc-link" data-title="Get the previous record in the tree for an Archival Object">Get the previous record in the tree for an Archival Object</a>
+                  </li>
+                  <li>
+                    <a href="#get-this-repository-rsquo-s-assessment-attribute-definitions" class="toc-h2 toc-link" data-title="Get this repository’s assessment attribute definitions">Get this repository’s assessment attribute definitions</a>
+                  </li>
+                  <li>
+                    <a href="#get-top-containers-linked-to-an-accession" class="toc-h2 toc-link" data-title="Get Top Containers linked to an Accession">Get Top Containers linked to an Accession</a>
+                  </li>
+                  <li>
+                    <a href="#get-top-containers-linked-to-a-published-resource-and-published-archival-ojbects-contained-within" class="toc-h2 toc-link" data-title="Get Top Containers linked to a published resource and published archival ojbects contained within.">Get Top Containers linked to a published resource and published archival ojbects contained within.</a>
+                  </li>
+                  <li>
+                    <a href="#import-a-batch-of-records" class="toc-h2 toc-link" data-title="Import a batch of records">Import a batch of records</a>
+                  </li>
+                  <li>
+                    <a href="#list-all-defined-enumerations" class="toc-h2 toc-link" data-title="List all defined enumerations">List all defined enumerations</a>
+                  </li>
+                  <li>
+                    <a href="#list-all-family-agents" class="toc-h2 toc-link" data-title="List all family agents">List all family agents</a>
+                  </li>
+                  <li>
+                    <a href="#list-all-person-agents" class="toc-h2 toc-link" data-title="List all person agents">List all person agents</a>
+                  </li>
+                  <li>
+                    <a href="#list-all-reports" class="toc-h2 toc-link" data-title="List all reports">List all reports</a>
+                  </li>
+                  <li>
+                    <a href="#list-all-software-agents" class="toc-h2 toc-link" data-title="List all software agents">List all software agents</a>
+                  </li>
+                  <li>
+                    <a href="#list-all-supported-import-job-types" class="toc-h2 toc-link" data-title="List all supported import job types">List all supported import job types</a>
+                  </li>
+                  <li>
+                    <a href="#list-all-supported-job-types" class="toc-h2 toc-link" data-title="List all supported job types">List all supported job types</a>
+                  </li>
+                  <li>
+                    <a href="#list-records-by-their-external-id-s" class="toc-h2 toc-link" data-title="List records by their external ID(s)">List records by their external ID(s)</a>
+                  </li>
+                  <li>
+                    <a href="#log-in" class="toc-h2 toc-link" data-title="Log in">Log in</a>
+                  </li>
+                  <li>
+                    <a href="#log-out-the-current-session" class="toc-h2 toc-link" data-title="Log out the current session">Log out the current session</a>
+                  </li>
+                  <li>
+                    <a href="#migrate-all-records-from-using-one-value-to-another" class="toc-h2 toc-link" data-title="Migrate all records from using one value to another">Migrate all records from using one value to another</a>
+                  </li>
+                  <li>
+                    <a href="#move-existing-archival-objects-to-become-children-of-an-archival-object" class="toc-h2 toc-link" data-title="Move existing Archival Objects to become children of an Archival Object">Move existing Archival Objects to become children of an Archival Object</a>
+                  </li>
+                  <li>
+                    <a href="#move-existing-archival-objects-to-become-children-of-a-resource" class="toc-h2 toc-link" data-title="Move existing Archival Objects to become children of a Resource">Move existing Archival Objects to become children of a Resource</a>
+                  </li>
+                  <li>
+                    <a href="#move-existing-classification-terms-to-become-children-of-a-classification" class="toc-h2 toc-link" data-title="Move existing Classification Terms to become children of a Classification">Move existing Classification Terms to become children of a Classification</a>
+                  </li>
+                  <li>
+                    <a href="#move-existing-classification-terms-to-become-children-of-another-classification-term" class="toc-h2 toc-link" data-title="Move existing Classification Terms to become children of another Classification Term">Move existing Classification Terms to become children of another Classification Term</a>
+                  </li>
+                  <li>
+                    <a href="#move-existing-digital-object-components-to-become-children-of-a-digital-object" class="toc-h2 toc-link" data-title="Move existing Digital Object components to become children of a Digital Object">Move existing Digital Object components to become children of a Digital Object</a>
+                  </li>
+                  <li>
+                    <a href="#move-existing-digital-object-components-to-become-children-of-a-digital-object-component" class="toc-h2 toc-link" data-title="Move existing Digital Object Components to become children of a Digital Object Component">Move existing Digital Object Components to become children of a Digital Object Component</a>
+                  </li>
+                  <li>
+                    <a href="#publish-a-digital-object-and-all-its-sub-records-and-components" class="toc-h2 toc-link" data-title="Publish a digital object and all its sub-records and components">Publish a digital object and all its sub-records and components</a>
+                  </li>
+                  <li>
+                    <a href="#publish-a-resource-and-all-its-sub-records-and-components" class="toc-h2 toc-link" data-title="Publish a resource and all its sub-records and components">Publish a resource and all its sub-records and components</a>
+                  </li>
+                  <li>
+                    <a href="#redirect-to-resource-identified-by-ark-name" class="toc-h2 toc-link" data-title="Redirect to resource identified by ARK Name">Redirect to resource identified by ARK Name</a>
+                  </li>
+                  <li>
+                    <a href="#refresh-the-list-of-currently-known-edits" class="toc-h2 toc-link" data-title="Refresh the list of currently known edits">Refresh the list of currently known edits</a>
+                  </li>
+                  <li>
+                    <a href="#require-fields-for-a-record-type" class="toc-h2 toc-link" data-title="Require fields for a record type">Require fields for a record type</a>
+                  </li>
+                  <li>
+                    <a href="#return-a-set-of-records-by-uri" class="toc-h2 toc-link" data-title="Return a set of records by URI">Return a set of records by URI</a>
+                  </li>
+                  <li>
+                    <a href="#return-the-counts-of-record-types-of-interest-by-repository" class="toc-h2 toc-link" data-title="Return the counts of record types of interest by repository">Return the counts of record types of interest by repository</a>
+                  </li>
+                  <li>
+                    <a href="#save-defaults-for-a-record-type" class="toc-h2 toc-link" data-title="Save defaults for a record type">Save defaults for a record type</a>
+                  </li>
+                  <li>
+                    <a href="#search-across-location-profiles" class="toc-h2 toc-link" data-title="Search across Location Profiles">Search across Location Profiles</a>
+                  </li>
+                  <li>
+                    <a href="#search-across-repositories" class="toc-h2 toc-link" data-title="Search across repositories">Search across repositories</a>
+                  </li>
+                  <li>
+                    <a href="#search-across-subjects" class="toc-h2 toc-link" data-title="Search across subjects">Search across subjects</a>
+                  </li>
+                  <li>
+                    <a href="#search-for-top-containers" class="toc-h2 toc-link" data-title="Search for top containers">Search for top containers</a>
+                  </li>
+                  <li>
+                    <a href="#search-this-archive" class="toc-h2 toc-link" data-title="Search this archive">Search this archive</a>
+                  </li>
+                  <li>
+                    <a href="#search-this-repository" class="toc-h2 toc-link" data-title="Search this repository">Search this repository</a>
+                  </li>
+                  <li>
+                    <a href="#set-the-parent-position-of-a-classification-term-in-a-tree" class="toc-h2 toc-link" data-title="Set the parent/position of a Classification Term in a tree">Set the parent/position of a Classification Term in a tree</a>
+                  </li>
+                  <li>
+                    <a href="#set-the-parent-position-of-an-archival-object-in-a-tree" class="toc-h2 toc-link" data-title="Set the parent/position of an Archival Object in a tree">Set the parent/position of an Archival Object in a tree</a>
+                  </li>
+                  <li>
+                    <a href="#set-the-parent-position-of-an-digital-object-component-in-a-tree" class="toc-h2 toc-link" data-title="Set the parent/position of an Digital Object Component in a tree">Set the parent/position of an Digital Object Component in a tree</a>
+                  </li>
+                  <li>
+                    <a href="#suppress-this-record" class="toc-h2 toc-link" data-title="Suppress this record">Suppress this record</a>
+                  </li>
+                  <li>
+                    <a href="#suppress-this-record-2" class="toc-h2 toc-link" data-title="Suppress this record">Suppress this record</a>
+                  </li>
+                  <li>
+                    <a href="#suppress-this-record-3" class="toc-h2 toc-link" data-title="Suppress this record">Suppress this record</a>
+                  </li>
+                  <li>
+                    <a href="#suppress-this-record-4" class="toc-h2 toc-link" data-title="Suppress this record">Suppress this record</a>
+                  </li>
+                  <li>
+                    <a href="#suppress-this-record-5" class="toc-h2 toc-link" data-title="Suppress this record">Suppress this record</a>
+                  </li>
+                  <li>
+                    <a href="#suppress-this-record-from-non-managers" class="toc-h2 toc-link" data-title="Suppress this record from non-managers">Suppress this record from non-managers</a>
+                  </li>
+                  <li>
+                    <a href="#suppress-this-value" class="toc-h2 toc-link" data-title="Suppress this value">Suppress this value</a>
+                  </li>
+                  <li>
+                    <a href="#transfer-components-from-one-resource-to-another" class="toc-h2 toc-link" data-title="Transfer components from one resource to another">Transfer components from one resource to another</a>
+                  </li>
+                  <li>
+                    <a href="#transfer-this-record-to-a-different-repository" class="toc-h2 toc-link" data-title="Transfer this record to a different repository">Transfer this record to a different repository</a>
+                  </li>
+                  <li>
+                    <a href="#transfer-this-record-to-a-different-repository-2" class="toc-h2 toc-link" data-title="Transfer this record to a different repository">Transfer this record to a different repository</a>
+                  </li>
+                  <li>
+                    <a href="#transfer-this-record-to-a-different-repository-3" class="toc-h2 toc-link" data-title="Transfer this record to a different repository">Transfer this record to a different repository</a>
+                  </li>
+                  <li>
+                    <a href="#transfer-this-record-to-a-different-repository-4" class="toc-h2 toc-link" data-title="Transfer this record to a different repository">Transfer this record to a different repository</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-classification" class="toc-h2 toc-link" data-title="Update a Classification">Update a Classification</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-classification-term" class="toc-h2 toc-link" data-title="Update a Classification Term">Update a Classification Term</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-container-profile" class="toc-h2 toc-link" data-title="Update a Container Profile">Update a Container Profile</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-corporate-entity-agent" class="toc-h2 toc-link" data-title="Update a corporate entity agent">Update a corporate entity agent</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-digital-object" class="toc-h2 toc-link" data-title="Update a Digital Object">Update a Digital Object</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-family-agent" class="toc-h2 toc-link" data-title="Update a family agent">Update a family agent</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-group" class="toc-h2 toc-link" data-title="Update a group">Update a group</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-location" class="toc-h2 toc-link" data-title="Update a Location">Update a Location</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-location-2" class="toc-h2 toc-link" data-title="Update a Location">Update a Location</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-location-profile" class="toc-h2 toc-link" data-title="Update a Location Profile">Update a Location Profile</a>
+                  </li>
+                  <li>
+                    <a href="#update-an-accession" class="toc-h2 toc-link" data-title="Update an Accession">Update an Accession</a>
+                  </li>
+                  <li>
+                    <a href="#update-an-archival-object" class="toc-h2 toc-link" data-title="Update an Archival Object">Update an Archival Object</a>
+                  </li>
+                  <li>
+                    <a href="#update-an-assessment" class="toc-h2 toc-link" data-title="Update an Assessment">Update an Assessment</a>
+                  </li>
+                  <li>
+                    <a href="#update-an-digital-object-component" class="toc-h2 toc-link" data-title="Update an Digital Object Component">Update an Digital Object Component</a>
+                  </li>
+                  <li>
+                    <a href="#update-an-enumeration" class="toc-h2 toc-link" data-title="Update an enumeration">Update an enumeration</a>
+                  </li>
+                  <li>
+                    <a href="#update-an-enumeration-value" class="toc-h2 toc-link" data-title="Update an enumeration value">Update an enumeration value</a>
+                  </li>
+                  <li>
+                    <a href="#update-an-event" class="toc-h2 toc-link" data-title="Update an Event">Update an Event</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-person-agent" class="toc-h2 toc-link" data-title="Update a person agent">Update a person agent</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-preferences-record" class="toc-h2 toc-link" data-title="Update a Preferences record">Update a Preferences record</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-repository" class="toc-h2 toc-link" data-title="Update a repository">Update a repository</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-repository-with-an-agent-representation" class="toc-h2 toc-link" data-title="Update a repository with an agent representation">Update a repository with an agent representation</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-resource" class="toc-h2 toc-link" data-title="Update a Resource">Update a Resource</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-software-agent" class="toc-h2 toc-link" data-title="Update a software agent">Update a software agent</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-subject" class="toc-h2 toc-link" data-title="Update a Subject">Update a Subject</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-top-container" class="toc-h2 toc-link" data-title="Update a top container">Update a top container</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-user-rsquo-s-groups" class="toc-h2 toc-link" data-title="Update a user’s groups">Update a user’s groups</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-vocabulary" class="toc-h2 toc-link" data-title="Update a Vocabulary">Update a Vocabulary</a>
+                  </li>
+                  <li>
+                    <a href="#update-container-profile-for-a-batch-of-top-containers" class="toc-h2 toc-link" data-title="Update container profile for a batch of top containers">Update container profile for a batch of top containers</a>
+                  </li>
+                  <li>
+                    <a href="#update-ils_holding_id-for-a-batch-of-top-containers" class="toc-h2 toc-link" data-title="Update ils_holding_id for a batch of top containers">Update ils_holding_id for a batch of top containers</a>
+                  </li>
+                  <li>
+                    <a href="#update-location-for-a-batch-of-top-containers" class="toc-h2 toc-link" data-title="Update location for a batch of top containers">Update location for a batch of top containers</a>
+                  </li>
+                  <li>
+                    <a href="#update-the-position-of-an-ennumeration-value" class="toc-h2 toc-link" data-title="Update the position of an ennumeration value">Update the position of an ennumeration value</a>
+                  </li>
+                  <li>
+                    <a href="#update-this-repository-rsquo-s-assessment-attribute-definitions" class="toc-h2 toc-link" data-title="Update this repository’s assessment attribute definitions">Update this repository’s assessment attribute definitions</a>
                   </li>
               </ul>
           </li>
@@ -246,7 +1074,6 @@
           </li>
       </ul>
         <ul class="toc-footer">
-            <li><a href='#'>Sign Up for a Developer Key</a></li>
             <li><a href='https://github.com/lord/slate'>Documentation Powered by Slate</a></li>
         </ul>
     </div>
@@ -254,96 +1081,126 @@
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='introduction'>Introduction</h1>
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+<p>This is the documentation for the AtoM 3 API! This document lists the endpoints that are used by the backend server to communicate with the frontend in the application.</p>
 
-<p>We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
-
-<p>This example API documentation page was created with <a href="https://github.com/lord/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&#39;s documentation.</p>
+<p>This example API documentation page was created with <a href="https://github.com/lord/slate">Slate</a>. </p>
 <h1 id='authentication'>Authentication</h1>
+<p>Most requests to the AtoM 3 backend requires an user to be authenticated. This can be done with a simple POST request to the /user/:user_name/login endpoint, with :user_name and :password parameter being supplied.</p>
+
+<p>The JSON that is returen will have a session key, which can be stored and used for other requests. Sessions will be expire after an hour (it can be configured in config.yml file)j</p>
+
 <blockquote>
 <p>To authorize, use this code:</p>
 </blockquote>
-<pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">atom3</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span> <span class="o">=</span> <span class="n">atom3</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'atom3atom3atom3'</span><span class="p">)</span>
 </code></pre><pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
 curl <span class="s2">"api_endpoint_here"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+  -H <span class="s2">"Authorization: atom3atom3atom3"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">atom3</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'atom3'</span><span class="p">);</span>
 
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">atom3</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'atom3atom3atom3'</span><span class="p">);</span>
 </code></pre>
 <blockquote>
-<p>Make sure to replace <code>meowmeowmeow</code> with your API key.</p>
+<p>Make sure to replace <code>atom3</code> with your API key.</p>
 </blockquote>
 
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
+<p>AtoM 3 uses API keys to allow access to the API. You can register a new AtoM 3 API key at our <a href="https://atom3.info/developers">developer portal</a>.</p>
 
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
+<p>AtoM 3 expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
 
-<p><code>Authorization: meowmeowmeow</code></p>
+<p><code>Authorization: atom3atom3atom3</code></p>
 
 <aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
+You must replace <code>atom3atom3atom3</code> with your personal API key.
 </aside>
-<h1 id='kittens'>Kittens</h1><h2 id='get-all-kittens'>Get All Kittens</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<h1 id='atom-3-rest-apis'>AtoM 3 REST APIs</h1><h2 id='create-a-corporate-entity-agent'>Create a corporate entity agent</h2><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
 
 <span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
 <span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl -H <span class="s2">"X-ArchivesSpace-Session: </span><span class="nv">$SESSION</span><span class="s2">"</span> <span class="se">\</span>
+  -d <span class="s1">'{ "jsonmodel_type":"agent_corporate_entity",
+"agent_contacts":[{ "jsonmodel_type":"agent_contact",
+"telephones":[{ "jsonmodel_type":"telephone",
+"number_type":"business",
+"number":"513 34331 63672 36823 208"}],
+"name":"Name Number 690",
+"address_1":"63375H837318",
+"city":"B45547836635",
+"country":"682544CT620",
+"email":"T356DUS"}],
+"linked_agent_roles":[],
+"external_documents":[],
+"notes":[],
+"used_within_repositories":[],
+"used_within_published_repositories":[],
+"dates_of_existence":[{ "jsonmodel_type":"date",
+"date_type":"bulk",
+"label":"existence",
+"begin":"2004-03-14",
+"end":"2004-03-14",
+"certainty":"inferred",
+"era":"ce",
+"calendar":"gregorian",
+"expression":"RHFR151"}],
+"is_slug_auto":true,
+"names":[{ "jsonmodel_type":"name_corporate_entity",
+"use_dates":[],
+"authorized":false,
+"is_display_name":false,
+"sort_name_auto_generate":true,
+"rules":"local",
+"primary_name":"Name Number 689",
+"subordinate_name_1":"G838GUT",
+"subordinate_name_2":"AIA40832",
+"number":"66015PBT",
+"sort_name":"SORT q - 589",
+"dates":"AHGP821",
+"qualifier":"S313VAO",
+"authority_id":"http://www.example-611.com",
+"source":"nad"}],
+"related_agents":[],
+"agent_type":"agent_corporate_entity"}'</span> <span class="se">\</span>
+  <span class="s2">"http://localhost:8089/agents/corporate_entities"</span>
 </code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
 
 <span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
 <span class="kd">let</span> <span class="nx">kittens</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="nx">get</span><span class="p">();</span>
 </code></pre>
 <blockquote>
-<p>The above command returns JSON structured like this:</p>
+<p>The above command returns JSON structured like this, if the corporate entity is created:</p>
 </blockquote>
-<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
+
+<p>Return HTTP Code: 200</p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"status"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="err">“Created”</span><span class="p">,</span><span class="w"> 
+  </span><span class="s2">"id"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"(id of created object)"</span><span class="p">,</span><span class="w"> 
+  </span><span class="s2">"warnings"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"{(warnings)}"</span><span class="w">
+</span><span class="p">}</span><span class="w">
 </span></code></pre>
-<p>This endpoint retrieves all kittens.</p>
+<blockquote>
+<p>The above command returns JSON structured like this, if the corporate entity is failed to create:</p>
+</blockquote>
+
+<p>Return HTTP code: 400</p>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"error"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"(description of error)"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Create a corporate entity agent</p>
 <h3 id='http-request'>HTTP Request</h3>
-<p><code>GET http://example.com/api/kittens</code></p>
+<p><code>POST /agents/corporate_entities</code></p>
 <h3 id='query-parameters'>Query Parameters</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
-<th>Default</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>include_cats</td>
-<td>false</td>
-<td>If set to true, the result will also include cats.</td>
-</tr>
-<tr>
-<td>available</td>
-<td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
+<td>JSONModel(:agent_corporate_entity)</td>
+<td>The record to create</td>
 </tr>
 </tbody></table>
 
@@ -352,7 +1209,7 @@ Remember — a happy kitten is an authenticated kitten!
 </aside>
 <h2 id='get-a-specific-kitten'>Get a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span> <span class="o">=</span> <span class="no">AtoM</span> <span class="mi">3</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
 <span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
 
@@ -395,7 +1252,7 @@ Remember — a happy kitten is an authenticated kitten!
 </tbody></table>
 <h2 id='delete-a-specific-kitten'>Delete a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span> <span class="o">=</span> <span class="no">AtoM</span> <span class="mi">3</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
 <span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
 
@@ -432,7 +1289,7 @@ Remember — a happy kitten is an authenticated kitten!
 <td>The ID of the kitten to delete</td>
 </tr>
 </tbody></table>
-<h1 id='errors'>Errors</h1>
+<h2 id='batch-create-several-archival-objects-as-children-of-an-existing-archival-object'>Batch create several Archival Objects as children of an existing Archival Object</h2><h2 id='batch-create-several-archival-objects-as-children-of-an-existing-resource'>Batch create several Archival Objects as children of an existing Resource</h2><h2 id='batch-create-several-digital-object-components-as-children-of-an-existing-digital-object'>Batch create several Digital Object Components as children of an existing Digital Object</h2><h2 id='batch-create-several-digital-object-components-as-children-of-an-existing-digital-object-component'>Batch create several Digital Object Components as children of an existing Digital Object Component</h2><h2 id='become-a-different-user'>Become a different user</h2><h2 id='bulk-update-barcodes'>Bulk update barcodes</h2><h2 id='bulk-update-locations'>Bulk update locations</h2><h2 id='calculate-how-many-containers-will-fit-in-a-list-of-locations'>Calculate how many containers will fit in a list of locations</h2><h2 id='calculate-how-many-containers-will-fit-in-locations-for-a-given-building'>Calculate how many containers will fit in locations for a given building</h2><h2 id='calculate-the-dates-of-an-archival-object-tree'>Calculate the dates of an archival object tree</h2><h2 id='calculate-the-extent-of-an-archival-object-tree'>Calculate the extent of an archival object tree</h2><h2 id='cancel-a-job'>Cancel a Job</h2><h2 id='carry-out-a-detailed-merge-request-against-agent-records'>Carry out a detailed merge request against Agent records</h2><h2 id='carry-out-a-merge-request-against-agent-records'>Carry out a merge request against Agent records</h2><h2 id='carry-out-a-merge-request-against-digital_object-records'>Carry out a merge request against Digital_Object records</h2><h2 id='carry-out-a-merge-request-against-resource-records'>Carry out a merge request against Resource records</h2><h2 id='carry-out-a-merge-request-against-subject-records'>Carry out a merge request against Subject records</h2><h2 id='carry-out-delete-requests-against-a-list-of-records'>Carry out delete requests against a list of records</h2><h2 id='create-a-batch-of-locations'>Create a Batch of Locations</h2><h2 id='create-a-classification'>Create a Classification</h2><h2 id='create-a-classification-term'>Create a Classification Term</h2><h2 id='create-a-container_profile'>Create a Container_Profile</h2><h2 id='create-a-digital-object'>Create a Digital Object</h2><h2 id='create-a-family-agent'>Create a family agent</h2><h2 id='create-a-group-within-a-repository'>Create a group within a repository</h2><h2 id='create-a-local-user'>Create a local user</h2><h2 id='create-a-location'>Create a Location</h2><h2 id='create-a-location_profile'>Create a Location_Profile</h2><h2 id='create-an-accession'>Create an Accession</h2><h2 id='create-an-archival-object'>Create an Archival Object</h2><h2 id='create-an-assessment'>Create an Assessment</h2><h2 id='create-an-digital-object-component'>Create an Digital Object Component</h2><h2 id='create-an-enumeration'>Create an enumeration</h2><h2 id='create-an-event'>Create an Event</h2><h2 id='create-a-new-job'>Create a new job</h2><h2 id='create-a-new-job-and-post-input-files'>Create a new job and post input files</h2><h2 id='create-an-rde-template'>Create an RDE template</h2><h2 id='create-a-person-agent'>Create a person agent</h2><h2 id='create-a-preferences-record'>Create a Preferences record</h2><h2 id='create-a-repository'>Create a Repository</h2><h2 id='create-a-repository-with-an-agent-representation'>Create a Repository with an agent representation</h2><h2 id='create-a-resource'>Create a Resource</h2><h2 id='create-a-software-agent'>Create a software agent</h2><h2 id='create-a-subject'>Create a Subject</h2><h2 id='create-a-top-container'>Create a top container</h2><h2 id='create-a-vocabulary'>Create a Vocabulary</h2><h2 id='delete-a-classification'>Delete a Classification</h2><h2 id='delete-a-classification-term'>Delete a Classification Term</h2><h2 id='delete-a-corporate-entity-agent'>Delete a corporate entity agent</h2><h2 id='delete-a-digital-object'>Delete a Digital Object</h2><h2 id='delete-a-digital-object-component'>Delete a Digital Object Component</h2><h2 id='delete-a-group-by-id'>Delete a group by ID</h2><h2 id='delete-a-job'>Delete a Job</h2><h2 id='delete-a-location'>Delete a Location</h2><h2 id='delete-an-accession'>Delete an Accession</h2><h2 id='delete-an-agent-family'>Delete an agent family</h2><h2 id='delete-an-agent-person'>Delete an agent person</h2><h2 id='delete-an-archival-object'>Delete an Archival Object</h2><h2 id='delete-an-assessment'>Delete an Assessment</h2><h2 id='delete-an-container-profile'>Delete an Container Profile</h2><h2 id='delete-an-event-record'>Delete an event record</h2><h2 id='delete-an-location-profile'>Delete an Location Profile</h2><h2 id='delete-an-rde-template'>Delete an RDE Template</h2><h2 id='delete-a-preferences-record'>Delete a Preferences record</h2><h2 id='delete-a-repository'>Delete a Repository</h2><h2 id='delete-a-resource'>Delete a Resource</h2><h2 id='delete-a-software-agent'>Delete a software agent</h2><h2 id='delete-a-subject'>Delete a Subject</h2><h2 id='delete-a-top-container'>Delete a top container</h2><h2 id='delete-a-user'>Delete a user</h2><h2 id='fetch-the-record-slice-for-a-given-tree-waypoint'>Fetch the record slice for a given tree waypoint</h2><h2 id='fetch-the-record-slice-for-a-given-tree-waypoint-2'>Fetch the record slice for a given tree waypoint</h2><h2 id='fetch-the-record-slice-for-a-given-tree-waypoint-3'>Fetch the record slice for a given tree waypoint</h2><h2 id='fetch-tree-information-for-an-archival-object-record-within-a-tree'>Fetch tree information for an Archival Object record within a tree</h2><h2 id='fetch-tree-information-for-an-classification-term-record-within-a-tree'>Fetch tree information for an Classification Term record within a tree</h2><h2 id='fetch-tree-information-for-an-digital-object-component-record-within-a-tree'>Fetch tree information for an Digital Object Component record within a tree</h2><h2 id='fetch-tree-information-for-the-top-level-classification-record'>Fetch tree information for the top-level classification record</h2><h2 id='fetch-tree-information-for-the-top-level-digital-object-record'>Fetch tree information for the top-level digital object record</h2><h2 id='fetch-tree-information-for-the-top-level-resource-record'>Fetch tree information for the top-level resource record</h2><h2 id='fetch-tree-path-from-the-root-record-to-classification-terms'>Fetch tree path from the root record to Classification Terms</h2><h2 id='fetch-tree-paths-from-the-root-record-to-archival-objects'>Fetch tree paths from the root record to Archival Objects</h2><h2 id='fetch-tree-paths-from-the-root-record-to-digital-object-components'>Fetch tree paths from the root record to Digital Object Components</h2><h2 id='find-archival-objects-by-ref_id-or-component_id'>Find Archival Objects by ref_id or component_id</h2><h2 id='find-digital-object-components-by-component_id'>Find Digital Object Components by component_id</h2><h2 id='find-digital-objects-by-digital_object_id'>Find Digital Objects by digital_object_id</h2><h2 id='find-resources-by-their-identifiers'>Find Resources by their identifiers</h2><h2 id='find-the-record-given-the-slug-return-id-repo_id-and-table-name'>Find the record given the slug, return id, repo_id, and table name</h2><h2 id='find-the-tree-view-for-a-particular-archival-record'>Find the tree view for a particular archival record</h2><h2 id='get-a-classification'>Get a Classification</h2><h2 id='get-a-classification-term-by-id'>Get a Classification Term by ID</h2><h2 id='get-a-classification-tree'>Get a Classification tree</h2><h2 id='get-a-collection-management-record-by-id'>Get a Collection Management Record by ID</h2><h2 id='get-a-container-profile-by-id'>Get a Container Profile by ID</h2><h2 id='get-a-corporate-entity-by-id'>Get a corporate entity by ID</h2><h2 id='get-a-digital-object'>Get a Digital Object</h2><h2 id='get-a-digital-object-tree'>Get a Digital Object tree</h2><h2 id='get-a-dublin-core-representation-of-a-digital-object'>Get a Dublin Core representation of a Digital Object</h2><h2 id='get-a-family-by-id'>Get a family by ID</h2><h2 id='get-a-group-by-id'>Get a group by ID</h2><h2 id='get-a-job-by-id'>Get a Job by ID</h2><h2 id='get-a-job-rsquo-s-list-of-created-uris'>Get a Job&rsquo;s list of created URIs</h2><h2 id='get-a-job-rsquo-s-log-by-id'>Get a Job&rsquo;s log by ID</h2><h2 id='get-a-job-rsquo-s-output-file-by-id'>Get a Job&rsquo;s output file by ID</h2><h2 id='get-a-list-of-accessions-for-a-repository'>Get a list of Accessions for a Repository</h2><h2 id='get-a-list-of-all-active-jobs-for-a-repository'>Get a list of all active Jobs for a Repository</h2><h2 id='get-a-list-of-all-archived-jobs-for-a-repository'>Get a list of all archived Jobs for a Repository</h2><h2 id='get-a-list-of-archival-objects-for-a-repository'>Get a list of Archival Objects for a Repository</h2><h2 id='get-a-list-of-assessments-for-a-repository'>Get a list of Assessments for a Repository</h2><h2 id='get-a-list-of-classifications-for-a-repository'>Get a list of Classifications for a Repository</h2><h2 id='get-a-list-of-classification-terms-for-a-repository'>Get a list of Classification Terms for a Repository</h2><h2 id='get-a-list-of-container-profiles'>Get a list of Container Profiles</h2><h2 id='get-a-list-of-digital-object-components-for-a-repository'>Get a list of Digital Object Components for a Repository</h2><h2 id='get-a-list-of-digital-objects-for-a-repository'>Get a list of Digital Objects for a Repository</h2><h2 id='get-a-list-of-events-for-a-repository'>Get a list of Events for a Repository</h2><h2 id='get-a-list-of-groups-for-a-repository'>Get a list of groups for a repository</h2><h2 id='get-a-list-of-job-rsquo-s-output-files-by-id'>Get a list of Job&rsquo;s output files by ID</h2><h2 id='get-a-list-of-jobs-for-a-repository'>Get a list of Jobs for a Repository</h2><h2 id='get-a-list-of-location-profiles'>Get a list of Location Profiles</h2><h2 id='get-a-list-of-locations'>Get a list of locations</h2><h2 id='get-a-list-of-permissions'>Get a list of Permissions</h2><h2 id='get-a-list-of-preferences-for-a-repository-and-optionally-a-user'>Get a list of Preferences for a Repository and optionally a user</h2><h2 id='get-a-list-of-rde-templates'>Get a list of RDE Templates</h2><h2 id='get-a-list-of-record-types-in-the-graph-of-a-resource'>Get a list of record types in the graph of a resource</h2><h2 id='get-a-list-of-repositories'>Get a list of Repositories</h2><h2 id='get-a-list-of-resources-for-a-repository'>Get a list of Resources for a Repository</h2><h2 id='get-a-list-of-subjects'>Get a list of Subjects</h2><h2 id='get-a-list-of-system-users'>Get a list of system users</h2><h2 id='get-a-list-of-terms-for-a-vocabulary'>Get a list of Terms for a Vocabulary</h2><h2 id='get-a-list-of-terms-matching-a-prefix'>Get a list of Terms matching a prefix</h2><h2 id='get-a-list-of-topcontainers-for-a-repository'>Get a list of TopContainers for a Repository</h2><h2 id='get-a-list-of-users'>Get a list of users</h2><h2 id='get-a-list-of-vocabularies'>Get a list of Vocabularies</h2><h2 id='get-all-archivesspace-schemas'>Get all ArchivesSpace schemas</h2><h2 id='get-a-location-by-id'>Get a Location by ID</h2><h2 id='get-a-location-by-id-2'>Get a Location by ID</h2><h2 id='get-a-location-profile-by-id'>Get a Location Profile by ID</h2><h2 id='get-a-marc-21-representation-of-a-resource'>Get a MARC 21 representation of a Resource</h2><h2 id='get-a-mets-representation-of-a-digital-object'>Get a METS representation of a Digital Object</h2><h2 id='get-a-mods-representation-of-a-digital-object'>Get a MODS representation of a Digital Object</h2><h2 id='get-an-accession-by-id'>Get an Accession by ID</h2><h2 id='get-an-archival-object-by-id'>Get an Archival Object by ID</h2><h2 id='get-an-archivesspace-schema'>Get an ArchivesSpace schema</h2><h2 id='get-an-assessment-by-id'>Get an Assessment by ID</h2><h2 id='get-an-digital-object-component-by-id'>Get an Digital Object Component by ID</h2><h2 id='get-an-eac-cpf-representation-of-a-corporate-entity'>Get an EAC-CPF representation of a Corporate Entity</h2><h2 id='get-an-eac-cpf-representation-of-a-family'>Get an EAC-CPF representation of a Family</h2><h2 id='get-an-eac-cpf-representation-of-an-agent'>Get an EAC-CPF representation of an Agent</h2><h2 id='get-an-eac-cpf-representation-of-a-software-agent'>Get an EAC-CPF representation of a Software agent</h2><h2 id='get-an-ead-representation-of-a-resource'>Get an EAD representation of a Resource</h2><h2 id='get-an-ead-representation-of-a-resource-2'>Get an EAD representation of a Resource</h2><h2 id='get-an-enumeration'>Get an Enumeration</h2><h2 id='get-an-enumeration-by-name'>Get an Enumeration by Name</h2><h2 id='get-an-enumeration-value'>Get an Enumeration Value</h2><h2 id='get-an-event-by-id'>Get an Event by ID</h2><h2 id='get-an-rde-template-record'>Get an RDE template record</h2><h2 id='get-a-person-by-id'>Get a person by ID</h2><h2 id='get-a-preferences-record'>Get a Preferences record</h2><h2 id='get-a-repository-by-id'>Get a Repository by ID</h2><h2 id='get-a-repository-by-id-including-its-agent-representation'>Get a Repository by ID, including its agent representation</h2><h2 id='get-a-resource'>Get a Resource</h2><h2 id='get-a-resource-tree'>Get a Resource tree</h2><h2 id='get-a-software-agent-by-id'>Get a software agent by ID</h2><h2 id='get-a-static-asset-for-a-report'>Get a static asset for a report</h2><h2 id='get-a-stream-of-deleted-records'>Get a stream of deleted records</h2><h2 id='get-a-stream-of-notifications'>Get a stream of notifications</h2><h2 id='get-a-stream-of-updated-records'>Get a stream of updated records</h2><h2 id='get-a-subject-by-id'>Get a Subject by ID</h2><h2 id='get-a-top-container-by-id'>Get a top container by ID</h2><h2 id='get-a-tsv-list-of-printable-labels-for-a-resource'>Get a tsv list of printable labels for a Resource</h2><h2 id='get-a-user-rsquo-s-details-including-their-current-permissions'>Get a user&rsquo;s details (including their current permissions)</h2><h2 id='get-a-user-rsquo-s-details-including-their-groups-for-the-current-repository'>Get a user&rsquo;s details including their groups for the current repository</h2><h2 id='get-a-vocabulary-by-id'>Get a Vocabulary by ID</h2><h2 id='get-default-values-for-a-record-type'>Get default values for a record type</h2><h2 id='get-export-metadata-for-a-resource-description'>Get export metadata for a Resource Description</h2><h2 id='get-export-metadata-for-resource-labels'>Get export metadata for Resource labels</h2><h2 id='get-metadata-for-a-dublin-core-export'>Get metadata for a Dublin Core export</h2><h2 id='get-metadata-for-a-marc21-export'>Get metadata for a MARC21 export</h2><h2 id='get-metadata-for-a-mets-export'>Get metadata for a METS export</h2><h2 id='get-metadata-for-a-mods-export'>Get metadata for a MODS export</h2><h2 id='get-metadata-for-an-eac-cpf-export-of-a-corporate-entity'>Get metadata for an EAC-CPF export of a corporate entity</h2><h2 id='get-metadata-for-an-eac-cpf-export-of-a-family'>Get metadata for an EAC-CPF export of a family</h2><h2 id='get-metadata-for-an-eac-cpf-export-of-a-person'>Get metadata for an EAC-CPF export of a person</h2><h2 id='get-metadata-for-an-eac-cpf-export-of-a-software'>Get metadata for an EAC-CPF export of a software</h2><h2 id='get-required-fields-for-a-record-type'>Get required fields for a record type</h2><h2 id='get-the-archivesspace-application-version'>Get the ArchivesSpace application version</h2><h2 id='get-the-children-of-a-classification-term'>Get the children of a Classification Term</h2><h2 id='get-the-children-of-an-archival-object'>Get the children of an Archival Object</h2><h2 id='get-the-children-of-an-digital-object-component'>Get the children of an Digital Object Component</h2><h2 id='get-the-currently-logged-in-user'>Get the currently logged in user</h2><h2 id='get-the-default-set-of-preferences-for-a-repository-and-optionally-a-user'>Get the default set of Preferences for a Repository and optionally a user</h2><h2 id='get-the-global-preferences-records-for-the-current-user'>Get the global Preferences records for the current user.</h2><h2 id='get-the-list-of-uris-of-this-published-resource-and-all-published-archival-objects-contained-within-ordered-by-tree-order-i-e-if-you-fully-expanded-the-record-tree-and-read-from-top-to-bottom'>Get the list of URIs of this published resource and all published archival objects contained within.Ordered by tree order (i.e. if you fully expanded the record tree and read from top to bottom)</h2><h2 id='get-the-preferences-records-for-the-current-repository-and-user'>Get the Preferences records for the current repository and user.</h2><h2 id='get-the-previous-record-in-the-tree-for-an-archival-object'>Get the previous record in the tree for an Archival Object</h2><h2 id='get-this-repository-rsquo-s-assessment-attribute-definitions'>Get this repository&rsquo;s assessment attribute definitions</h2><h2 id='get-top-containers-linked-to-an-accession'>Get Top Containers linked to an Accession</h2><h2 id='get-top-containers-linked-to-a-published-resource-and-published-archival-ojbects-contained-within'>Get Top Containers linked to a published resource and published archival ojbects contained within.</h2><h2 id='import-a-batch-of-records'>Import a batch of records</h2><h2 id='list-all-defined-enumerations'>List all defined enumerations</h2><h2 id='list-all-family-agents'>List all family agents</h2><h2 id='list-all-person-agents'>List all person agents</h2><h2 id='list-all-reports'>List all reports</h2><h2 id='list-all-software-agents'>List all software agents</h2><h2 id='list-all-supported-import-job-types'>List all supported import job types</h2><h2 id='list-all-supported-job-types'>List all supported job types</h2><h2 id='list-records-by-their-external-id-s'>List records by their external ID(s)</h2><h2 id='log-in'>Log in</h2><h2 id='log-out-the-current-session'>Log out the current session</h2><h2 id='migrate-all-records-from-using-one-value-to-another'>Migrate all records from using one value to another</h2><h2 id='move-existing-archival-objects-to-become-children-of-an-archival-object'>Move existing Archival Objects to become children of an Archival Object</h2><h2 id='move-existing-archival-objects-to-become-children-of-a-resource'>Move existing Archival Objects to become children of a Resource</h2><h2 id='move-existing-classification-terms-to-become-children-of-a-classification'>Move existing Classification Terms to become children of a Classification</h2><h2 id='move-existing-classification-terms-to-become-children-of-another-classification-term'>Move existing Classification Terms to become children of another Classification Term</h2><h2 id='move-existing-digital-object-components-to-become-children-of-a-digital-object'>Move existing Digital Object components to become children of a Digital Object</h2><h2 id='move-existing-digital-object-components-to-become-children-of-a-digital-object-component'>Move existing Digital Object Components to become children of a Digital Object Component</h2><h2 id='publish-a-digital-object-and-all-its-sub-records-and-components'>Publish a digital object and all its sub-records and components</h2><h2 id='publish-a-resource-and-all-its-sub-records-and-components'>Publish a resource and all its sub-records and components</h2><h2 id='redirect-to-resource-identified-by-ark-name'>Redirect to resource identified by ARK Name</h2><h2 id='refresh-the-list-of-currently-known-edits'>Refresh the list of currently known edits</h2><h2 id='require-fields-for-a-record-type'>Require fields for a record type</h2><h2 id='return-a-set-of-records-by-uri'>Return a set of records by URI</h2><h2 id='return-the-counts-of-record-types-of-interest-by-repository'>Return the counts of record types of interest by repository</h2><h2 id='save-defaults-for-a-record-type'>Save defaults for a record type</h2><h2 id='search-across-location-profiles'>Search across Location Profiles</h2><h2 id='search-across-repositories'>Search across repositories</h2><h2 id='search-across-subjects'>Search across subjects</h2><h2 id='search-for-top-containers'>Search for top containers</h2><h2 id='search-this-archive'>Search this archive</h2><h2 id='search-this-repository'>Search this repository</h2><h2 id='set-the-parent-position-of-a-classification-term-in-a-tree'>Set the parent/position of a Classification Term in a tree</h2><h2 id='set-the-parent-position-of-an-archival-object-in-a-tree'>Set the parent/position of an Archival Object in a tree</h2><h2 id='set-the-parent-position-of-an-digital-object-component-in-a-tree'>Set the parent/position of an Digital Object Component in a tree</h2><h2 id='suppress-this-record'>Suppress this record</h2><h2 id='suppress-this-record-2'>Suppress this record</h2><h2 id='suppress-this-record-3'>Suppress this record</h2><h2 id='suppress-this-record-4'>Suppress this record</h2><h2 id='suppress-this-record-5'>Suppress this record</h2><h2 id='suppress-this-record-from-non-managers'>Suppress this record from non-managers</h2><h2 id='suppress-this-value'>Suppress this value</h2><h2 id='transfer-components-from-one-resource-to-another'>Transfer components from one resource to another</h2><h2 id='transfer-this-record-to-a-different-repository'>Transfer this record to a different repository</h2><h2 id='transfer-this-record-to-a-different-repository-2'>Transfer this record to a different repository</h2><h2 id='transfer-this-record-to-a-different-repository-3'>Transfer this record to a different repository</h2><h2 id='transfer-this-record-to-a-different-repository-4'>Transfer this record to a different repository</h2><h2 id='update-a-classification'>Update a Classification</h2><h2 id='update-a-classification-term'>Update a Classification Term</h2><h2 id='update-a-container-profile'>Update a Container Profile</h2><h2 id='update-a-corporate-entity-agent'>Update a corporate entity agent</h2><h2 id='update-a-digital-object'>Update a Digital Object</h2><h2 id='update-a-family-agent'>Update a family agent</h2><h2 id='update-a-group'>Update a group</h2><h2 id='update-a-location'>Update a Location</h2><h2 id='update-a-location-2'>Update a Location</h2><h2 id='update-a-location-profile'>Update a Location Profile</h2><h2 id='update-an-accession'>Update an Accession</h2><h2 id='update-an-archival-object'>Update an Archival Object</h2><h2 id='update-an-assessment'>Update an Assessment</h2><h2 id='update-an-digital-object-component'>Update an Digital Object Component</h2><h2 id='update-an-enumeration'>Update an enumeration</h2><h2 id='update-an-enumeration-value'>Update an enumeration value</h2><h2 id='update-an-event'>Update an Event</h2><h2 id='update-a-person-agent'>Update a person agent</h2><h2 id='update-a-preferences-record'>Update a Preferences record</h2><h2 id='update-a-repository'>Update a repository</h2><h2 id='update-a-repository-with-an-agent-representation'>Update a repository with an agent representation</h2><h2 id='update-a-resource'>Update a Resource</h2><h2 id='update-a-software-agent'>Update a software agent</h2><h2 id='update-a-subject'>Update a Subject</h2><h2 id='update-a-top-container'>Update a top container</h2><h2 id='update-a-user-rsquo-s-groups'>Update a user&rsquo;s groups</h2><h2 id='update-a-vocabulary'>Update a Vocabulary</h2><h2 id='update-container-profile-for-a-batch-of-top-containers'>Update container profile for a batch of top containers</h2><h2 id='update-ils_holding_id-for-a-batch-of-top-containers'>Update ils_holding_id for a batch of top containers</h2><h2 id='update-location-for-a-batch-of-top-containers'>Update location for a batch of top containers</h2><h2 id='update-the-position-of-an-ennumeration-value'>Update the position of an ennumeration value</h2><h2 id='update-this-repository-rsquo-s-assessment-attribute-definitions'>Update this repository&rsquo;s assessment attribute definitions</h2><h1 id='errors'>Errors</h1>
 <aside class="notice">
 This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
 </aside>
@@ -495,9 +1352,9 @@ This error section is stored in a separate file in <code>includes/_errors.md</co
       <div class="dark-box">
           <div class="lang-selector">
                 <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="ruby">ruby</a>
                 <a href="#" data-language-name="python">python</a>
                 <a href="#" data-language-name="javascript">javascript</a>
+                <a href="#" data-language-name="php">php</a>
           </div>
       </div>
     </div>
